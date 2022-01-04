@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="hero hero3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- <h1> movie listing - list</h1>
+				<ul class="breadcumb">
+					<li class="active"><a href="#">Home</a></li>
+					<li> <span class="ion-ios-arrow-right"></span> movie listing</li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- celebrity single section-->
+
+<div class="page-single movie-single cebleb-single">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="mv-ceb">
+					<img src="{{ page.permalink }}anime.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="movie-single-ct">
+					<h1 class="bd-hd">{{ page.title }}</h1>
+					<p class="ceb-single">{{ page.extra.hero }}  |  Hero</p>
+					<div class="social-link cebsingle-socail">
+						<a href="#"><i class="ion-social-facebook"></i></a>
+						<a href="#"><i class="ion-social-twitter"></i></a>
+						<a href="#"><i class="ion-social-googleplus"></i></a>
+						<a href="#"><i class="ion-social-linkedin"></i></a>
+					</div>
+					<div class="movie-tabs">
+						<div class="tabs">
+							<ul class="tab-links tabs-mv">
+								<li class="active"><a href="#overviewceb">Overview</a></li>
+								<li><a href="#biography"> biography</a></li>
+								<li><a href="#mediaceb"> Media</a></li> 
+								<li><a href="#filmography">filmography</a></li>                        
+							</ul>
+						    <div class="tab-content">
+						        <div id="overviewceb" class="tab active">
+						            <div class="row">
+						            	<div class="col-md-8 col-sm-12 col-xs-12">
+
+						            		
+
+						            	</div>
+						            	<div class="col-md-4 col-xs-12 col-sm-12">
+						            		<div class="sb-it">
+						            			<h6>Rōmaji:  <a href="#">{{ page.title }}</a></h6>
+                                                <h6>Kanji/Kana: <a href="#">{{ page.extra.kana }}</a></h6>
+						            		</div>
+                                            <div><h5>Physical Information </h5></div>
+                                                <br>
+						            		<div class="sb-it">
+						            			<h6>Age: <a href="#">{{ page.extra.age }}</a></h6>						            			
+                                                <h6>Race: <a href="#">{{ page.extra.race }}</a></h6>
+                                                <h6>Gender: <a href="#">{{ page.extra.gender }}</a></h6>
+                                                <h6>Eye Color: <a href="#">{{ page.extra.eye }}</a></h6>
+                                                <h6>Hair Color: <a href="#">{{ page.extra.hair }}</a></h6>
+						            		</div>
+                                            <div><h5>Professional & Social Info </h5></div>
+                                                <br>
+						            		<div class="sb-it">
+						            			<h6>Family: <a href="#">{{ page.extra.family }}</a></h6>
+                                                <h6>Status: <a href="#">{{ page.extra.status }}</a></h6>
+                                                <h6>Occupation: <a href="#">{{ page.extra.occupation }}</a></h6>
+                                                <h6>Lv.: <a href="#">{{ page.extra.lv }}</a></h6>
+                                                <h6>Country: <a href="#">{{ page.extra.country }}</a></h6>
+                                                <h6>Affiliation: <a href="#">{{ page.extra.affiliation }}</a></h6>
+                                                <h6>Epithet: <a href="#">{{ page.extra.epithet }}</a></h6>
+                                                <h6>Weapon: <a href="#">{{ page.extra.weapon }}</a></h6>
+						            		</div>
+						            		<div><h5>Physical Information </h5></div>
+                                                <br>
+						            		<div class="sb-it">
+						            			<h6>Anime: <a href="#">{{ page.extra.anime }}</a></h6>					            			
+                                                <h6>Manga: <a href="#">{{ page.extra.manga }}</a></h6>
+                                                <h6>Light Novel: <a href="#">{{ page.extra.light }}</a></h6>
+                                                <h6>Web Novel: <a href="#">{{ page.extra.web }}</a></h6>
+                                                <h6>Drama Voice: <a href="#">{{ page.extra.drama_voice }}</a></h6>
+                                                <h6>Japanese Voice: <a href="#">{{ page.extra.japanese_voice }}</a></h6>
+                                                <h6>English Voice: <a href="#">{{ page.extra.english_voice }}</a></h6>
+						            		</div>
+						            	</div>
+						            </div>
+						        </div>
+						        <div id="biography" class="tab">
+						           <div class="row">
+
+                                    {{ page.content | safe }}
+
+						            </div>
+						        </div>
+						        <div id="mediaceb" class="tab">
+						        	<div class="row">
+										<div class="title-hd-sm">
+											<h4>Photos <span> (21)</span></h4>
+										</div>
+										<div class="mvsingle-item">
+
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image11.jpg" ><img src="images/uploads/image1.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery"  href="images/uploads/image21.jpg" ><img src="images/uploads/image2.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image31.jpg" ><img src="images/uploads/image3.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image41.jpg" ><img src="images/uploads/image4.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image51.jpg" ><img src="images/uploads/image5.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image61.jpg" ><img src="images/uploads/image6.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image71.jpg" ><img src="images/uploads/image7.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image81.jpg" ><img src="images/uploads/image8.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image91.jpg" ><img src="images/uploads/image9.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image101.jpg" ><img src="images/uploads/image10.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image111.jpg" ><img src="images/uploads/image1-1.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image121.jpg" ><img src="images/uploads/image12.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image131.jpg" ><img src="images/uploads/image13.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image141.jpg" ><img src="images/uploads/image14.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image151.jpg" ><img src="images/uploads/image15.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image161.jpg" ><img src="images/uploads/image16.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image171.jpg" ><img src="images/uploads/image17.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image181.jpg" ><img src="images/uploads/image18.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image191.jpg" ><img src="images/uploads/image19.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image201.jpg" ><img src="images/uploads/image20.jpg" alt=""></a>
+											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image211.jpg" ><img src="images/uploads/image2-1.jpg" alt=""></a>
+										</div>
+						        	</div>
+					       	 	</div>
+					       	 	<div id="filmography" class="tab">
+						        	<div class="row">
+						            	<div class="rv-hd">
+						            		<div>
+						            			<h3>Biography of</h3>
+					       	 					<h2>Hugh Jackman</h2>
+						            		</div>
+										
+						            	</div>
+						            	<div class="topbar-filter">
+											<p>Found <span>14 movies</span> in total</p>
+											<label>Filter by:</label>
+											<select>
+												<option value="popularity">Popularity Descending</option>
+												<option value="popularity">Popularity Ascending</option>
+												<option value="rating">Rating Descending</option>
+												<option value="rating">Rating Ascending</option>
+												<option value="date">Release date Descending</option>
+												<option value="date">Release date Ascending</option>
+											</select>
+										</div>
+										<!-- movie cast -->
+										<div class="mvcast-item">											
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film1.jpg" alt="">
+													<div>
+														<a href="#">X-Men: Apocalypse </a>
+														<p class="time">Logan</p>
+													</div>
+													
+												</div>
+												<p>...  2016</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film2.jpg" alt="">
+													<div>
+														<a href="#">Eddie the Eagle </a>
+														<p class="time">Bronson Peary</p>
+													</div>
+												</div>
+												<p>...  2015</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film3.jpg" alt="">
+													<div>
+														<a href="#">Me and Earl and the Dying Girl </a>
+														<p class="time">Hugh Jackman</p>
+													</div>
+												</div>
+												<p>...  2015</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film4.jpg" alt="">
+													<div>
+														<a href="#">Night at the Museum 3 </a>
+														<p class="time">Blackbeard</p>
+													</div>
+												</div>
+												<p>...  2014</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film5.jpg" alt="">
+													<div>
+														<a href="#">X-Men: Days of Future Past </a>
+														<p class="time">Wolverine</p>
+													</div>
+												</div>
+												<p>...  2012</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film6.jpg" alt="">
+													<div>
+														<a href="#">The Wolverine </a>
+														<p class="time">Logan</p>
+													</div>
+												</div>
+												<p>...  2011</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film7.jpg" alt="">
+													<div>
+														<a href="#">Rise of the Guardians </a>
+														<p class="time">Bunny</p>
+													</div>
+												</div>
+												<p>...  2011</p>
+											</div>
+											<div class="cast-it">
+												<div class="cast-left cebleb-film">
+													<img src="images/uploads/film8.jpg" alt="">
+													<div>
+														<a href="#">The Prestige </a>
+														<p class="time">Robert Angier</p>
+													</div>
+												</div>
+												<p>...  2010</p>
+											</div>
+										</div>
+						            </div>
+					       	 	</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- celebrity single section-->
+{% endblock main %}

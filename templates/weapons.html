@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> {{ page.title }}</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> {{ page.title }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- blog detail section-->
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-12 col-xs-12">
+				<div class="blog-detail-ct">
+                    
+                    {{ page.content | safe }}
+
+                    <br>
+                    <h1>Legendary Weapons List</h1>
+                    <div class="topbar-filter fw">
+                    <div class="flex-wrap-movielist mv-grid-fw">
+                        {% for asset in page.assets %}
+                        {% if asset is matching("[.](jpg|png)$") %}
+                            <div class="movie-item-style-2 movie-item-style-1">
+                                <img src="{{ resize_image(path=asset, width=250, height=250, op="fill") }}" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="{{ get_url(path=asset) }}"></a></h6>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% endfor %}						
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end of  blog detail section-->
+{% endblock main %}

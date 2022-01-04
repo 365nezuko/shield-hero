@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	<!-- Basic need -->
+<title>The Rising of the Shield Hero</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="profile" href="#">
+
+<!--Google Font-->
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+<!-- Mobile specific meta -->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/plugins.css">
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/style.css">
+</head>
+<body>
+	<!--preloading-->
+	<div id="preloader">
+    <img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+	<!--end of preloading-->
+	<!--login form popup-->
+	<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                    </div>
+                    <a href="#">Forget password ?</a>
+                </div>
+            </div>
+        <div class="row">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <div class="row">
+            <p>Or via social</p>
+            <div class="social-btn-2">
+                <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+        <div class="row">
+            <button type="submit">sign up</button>
+        </div>
+        </form>
+    </div>
+</div>
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+    <div class="container">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li><a href="/">Home</a></li>	
+                        <li class="dropdown first">
+                            <a href="/media" data-hover="dropdown">
+                            media<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="/anime">Anime</a></li>
+                                <li><a href="/manga">Manga</a></li>
+                                <li><a href="moviegrid.html">Light Novel</a></li>
+                                <li><a href="moviegridfw.html">Web Novel</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            univers<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/univers/heroes">Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/heroes/legendary">Legendary Weapons</a></li>
+                                        <li><a href="/univers/heroes/vassal">Vassal Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/">Monsters <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/">Animal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/univers/magic">Magic</a></li>
+                                <li class="dropdown">
+                                    <a href="/univers/items">items <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/items/accessories">Accessories</a></li>
+                                        <li><a href="/univers/items/armor">Armor</a></li>
+                                        <li><a href="/univers/items/compounds">Compounds</a></li>
+                                        <li><a href="/univers/items/weapons">Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/univers/locations">Locations <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/locations">Rock Valley</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            charaters <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/charaters/legendary_heros">Legend Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/charaters/legendary_heros/naofumi">Naofumi Iwatani</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            explore <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="userfavoritegrid.html">videos</a></li>
+                                <li><a href="userfavoritelist.html">images</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">           
+                        <li><a href="#">Help</a></li>
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+	<!-- END | Header -->
+
+	
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> Legendary Weapons</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> Legendary Weapons</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- blog detail section-->
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-12 col-xs-12">
+				<div class="blog-detail-ct">
+                    
+                    <p>The <code>Legendary Weapons</code> (伝説武器 Densetsu Buki?) are summoned and wielded by the <code>Four Legendary Heroes</code> from another world. They are also referred to as the <code>Four Heavenly Weapons</code> (聖武器 Seibuki?) since many religions formed centering around the <code>Legendary Heroes</code>.</p>
+<h1 id="history">History</h1>
+<h2 id="origins">Origins</h2>
+<p>The origins of the Legendary Weapons are still unknown. It is speculated that the Vassal Weapons have a deep tie with the Legendary Weapons and the origins of the world.</p>
+<p>Their objective is to defeat the current set of Waves of Calamity, after which the users are allowed to resign back to their worlds.</p>
+<h2 id="legends">Legends</h2>
+<p>Legendary Weapons are summoned in response to the waves, appearing in sets of unique weapons, usually four in total. The summoning ritual will also select people from other worlds to wield these weapons; in Naofumi's case, he encountered The Record of the Four Holy Weapons while browsing the library. Once a Legendary Hero is deceased, their weapon will disappear in wait to be summoned again with a new hero. The weapons can be resummoned if either the current set of waves is vanquished, or the set of weapons is expunged. With each weapon missing, the waves are said to grow stronger.</p>
+<p>Legendary Weapons specialize in protecting the world they reside in. They upgrade through adventuring within their respective worlds, with each world having different power metrics.</p>
+<h1 id="abilities">Abilities</h1>
+<ul>
+<li>See also Vassal Weapons </li>
+</ul>
+<p>Legendary Weapon potential is superior to Vassal Weapons, but have more restrictive functions.</p>
+<p>All weapons possess a gem that acts as the functional matrix to activate abilities, this gem persists through transformations.</p>
+<h2 id="by-pass">By-pass</h2>
+<ul>
+<li>No level cap, No class-up requirement.</li>
+<li>Immune to curse slaves seals. </li>
+</ul>
+<h2 id="restrictions">Restrictions</h2>
+<ul>
+<li>
+<p>Legendary Weapons innately inhibit each other's experience gain when in close proximity,forcing heroes to adventure individually. </p>
+</li>
+<li>
+<p>Restricted from equipping any weapon apart from the assigned (else be zapped). The assigned weapon will teleport to the user if removed. </p>
+</li>
+</ul>
+<h2 id="translate">Translate</h2>
+<ul>
+<li>Verbal language is translated to the user into their primary language, and the user can vocalize into their recipient's primary language. </li>
+</ul>
+<h2 id="absorption">Absorption</h2>
+<ul>
+<li>Weapons can absorb loot, items, and materials to unlock new variations of themselves. The user can access new transformations provided they reach the level requirement. </li>
+</ul>
+<h2 id="weapon-transformation">Weapon transformation</h2>
+<ul>
+<li>Weapons can transform into different variations that grant the user new equip bonuses including stats, skills, and abilities. Variations can become mastered with enough experience, allowing the user to permanently retain the equip bonuses even if they switch transformations. Some bonuses remain exclusive.</li>
+</ul>
+<h2 id="weapon-copy">Weapon Copy</h2>
+<ul>
+<li>The user can copy variants they encounter and store them for later access. </li>
+</ul>
+<h2 id="strengthening-method">Strengthening Method</h2>
+<ul>
+<li>Weapons have various strengthening methods that are selectively revealed to the user's interface. Other users can enable these systems only if they believe they exist. This sharing is accessible between Legendary Heroes and Vassal Wielders. </li>
+</ul>
+<h2 id="wave-summon">Wave Summon</h2>
+<ul>
+<li>The Legendary Heroes' parties are transported to the spawn of a Wave of Calamity, where they defeat the wave. </li>
+</ul>
+<h2 id="curse-series">Curse Series</h2>
+<p>Legendary Weapons respond to the user's strong negative emotions, absorbing them to unlock the Curse variant. The Curse variant is unlocked when the owner of the weapon undergoes enough heavy strain through negative and traumatic events.</p>
+<p>The Curse Series is suicide prevention for the Legendary Heroes. They grant powerful effects, stats bonuses, and abilities. But the users of the Curse Series always have to pay a heavy price when used.</p>
+
+
+                    <br>
+                    <h1>Legendary Weapons List</h1>
+                    <div class="topbar-filter fw">
+                    <div class="flex-wrap-movielist mv-grid-fw">
+                        
+                        
+                            <div class="movie-item-style-2 movie-item-style-1">
+                                <img src="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;processed_images&#x2F;56e11e03c85f0dd900.jpg" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;univers\heroes\legendary\bow.jpg"></a></h6>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                            <div class="movie-item-style-2 movie-item-style-1">
+                                <img src="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;processed_images&#x2F;383e77273c6e451200.png" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;univers\heroes\legendary\shield.png"></a></h6>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                            <div class="movie-item-style-2 movie-item-style-1">
+                                <img src="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;processed_images&#x2F;b801656d4277458300.jpg" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;univers\heroes\legendary\spear.jpg"></a></h6>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                            <div class="movie-item-style-2 movie-item-style-1">
+                                <img src="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;processed_images&#x2F;633ce8a52af2110600.jpg" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="http:&#x2F;&#x2F;127.0.0.1:1002&#x2F;univers\heroes\legendary\sword.jpg"></a></h6>
+                                </div>
+                            </div>
+                        
+                        						
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end of  blog detail section-->
+
+
+	<!-- footer section-->
+	<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt=""></a>
+                <p>5th Avenue st, manhattan<br>
+                New York, NY 10001</p>
+                <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Privacy Policy</a></li>	
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li> 
+                    <li><a href="#">Watchlist</a></li>	
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">User Guide</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email...">
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari. Zola by <a href="#" >Nezuko Yuuki</a></p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+	<!-- end of footer section-->
+
+	    <script src="http://127.0.0.1:1002/js/jquery.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins2.js"></script>
+	<script src="http://127.0.0.1:1002/js/custom.js"></script>
+<script src="/livereload.js?port=1003&mindelay=10"></script></body>
+</html>

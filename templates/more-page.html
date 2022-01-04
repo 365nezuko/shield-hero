@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include "partials/_banner.html" %}
+
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				{{ page.content | safe }}
+						
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock main %}

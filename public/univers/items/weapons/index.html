@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	<!-- Basic need -->
+<title>The Rising of the Shield Hero</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="profile" href="#">
+
+<!--Google Font-->
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+<!-- Mobile specific meta -->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/plugins.css">
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/style.css">
+</head>
+<body>
+	<!--preloading-->
+	<div id="preloader">
+    <img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+	<!--end of preloading-->
+	<!--login form popup-->
+	<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                    </div>
+                    <a href="#">Forget password ?</a>
+                </div>
+            </div>
+        <div class="row">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <div class="row">
+            <p>Or via social</p>
+            <div class="social-btn-2">
+                <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+        <div class="row">
+            <button type="submit">sign up</button>
+        </div>
+        </form>
+    </div>
+</div>
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+    <div class="container">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li><a href="/">Home</a></li>	
+                        <li class="dropdown first">
+                            <a href="/media" data-hover="dropdown">
+                            media<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="/anime">Anime</a></li>
+                                <li><a href="/manga">Manga</a></li>
+                                <li><a href="moviegrid.html">Light Novel</a></li>
+                                <li><a href="moviegridfw.html">Web Novel</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            univers<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/univers/heroes">Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/heroes/legendary">Legendary Weapons</a></li>
+                                        <li><a href="/univers/heroes/vassal">Vassal Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/">Monsters <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/">Animal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/univers/magic">Magic</a></li>
+                                <li class="dropdown">
+                                    <a href="/univers/items">items <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/items/accessories">Accessories</a></li>
+                                        <li><a href="/univers/items/armor">Armor</a></li>
+                                        <li><a href="/univers/items/compounds">Compounds</a></li>
+                                        <li><a href="/univers/items/weapons">Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/univers/locations">Locations <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/locations">Rock Valley</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            charaters <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/charaters/legendary_heros">Legend Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/charaters/legendary_heros/naofumi">Naofumi Iwatani</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            explore <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="userfavoritegrid.html">videos</a></li>
+                                <li><a href="userfavoritelist.html">images</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">           
+                        <li><a href="#">Help</a></li>
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+	<!-- END | Header -->
+
+	
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> Weapons</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> Weapons</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<h2 id="thunder-cage">Thunder Cage</h2>
+<p>The magical instrument Thunder Cage is a setting trap that must be used by someone experienced. Being a cage and all, it's purpose is to never letting whatever it captures free. It was used to capture Naofumi and company when they were attempting to escape in the opposite direction of Siltvelt. Naofumi thinks he could probably break through it if he had enough time. Alternatively, they would need a key from the owner to escape. Found in chapter『Chapter 67』of the web novel.</p>
+<h2 id="legendary-weapons-replica">Legendary Weapons Replica</h2>
+<p>The Replica of the Four Legendary Heroes power is divided into four making the weapon have one-fourth of the original legendary weapon's power</p>
+<p>Ancient Series it first appears as a silver-white sword decorated with ornaments the jewel buried in the middle of it gives off an unpleasant feeling. To have power rivaling a legendary weapon, several hundred people's worths of magical power must be sacrificed in order to use the replica once. Found in chapter『Chapter 70/71』of the web novel.</p>
+<h2 id="karma-dog-claw">Karma Dog Claw</h2>
+<p>The Karma Dog Claw is a drop item from the Karma Dog. Since it is a type of weapon it boosts attacking power of the wearer however the amount is not mentioned with a numerical value and it has a darkness attribute which makes monsters attacked with them less appetizing according to Filo. The first pair acquired were too small for Filo to wear, but since the size varies with each drop they were able to find a pair that fits. It doesn't have blood clean coating, so the weapon won't last long. Found in chapter『Chapter 106』of the web novel.</p>
+<h2 id="karma-rabbit-sword">Karma Rabbit Sword</h2>
+<p>The Karma Rabbit Sword is a drop item from the Karma Rabbit. It doesn't have blood clean coating, so the weapon won't last long. One was given to Raphtalia. Found in chapter『Chapter 106』of the web novel.</p>
+<h2 id="usauni-sword">Usauni Sword</h2>
+<p>The Usauni Sword is a high-quality sword made by reinforcing the Usaruppi Sword with the Black Rabbit materials acquired on Cal Mira Archipelago made for Raphtalia. When they were used the sword immediately turned white. It posses a Blood Deterring Charm, an anti-deterioration enhancement slightly less effective than the coating, but it should work for general purposes. Its edge is sharpened and it has some light enchantments which include Agility Up, Magic Up, and Pierce Power Up as well as the Blood Deterrent from the charm. Found in chapter『Chapter 115』of the web novel.</p>
+<h2 id="inulut-claw">Inulut Claw</h2>
+<p>The Inulut Claw is a high-quality pair of claws made by reinforcing the Karma Dog Claw with the Black Dog materials acquired on Cal Mira Archipelago made for Filo. When they were used the claws immediately turned white. It posses a Blood Deterring Charm, an anti-deterioration enhancement slightly less effective than the coating, but it should work for general purposes. It has some light enchantments which include Agility Up, Magic Up, and Pierce Power Up as well as the Blood Deterrent from the charm. Found in chapter『Chapter 115』of the web novel.</p>
+<h2 id="speckle-spear">Speckle Spear</h2>
+<p>The Speckle Spear is a high-quality spear made from using the remaining Karma Penguin ingredients. The ingredients almost ran out while making it so it was quite difficult. It posses a Blood Deterring Charm, an anti-deterioration enhancement slightly less effective than the coating, but it should work for general purposes. It has some light enchantments which include Agility Up, Magic Up, and Pierce Power Up as well as the Blood Deterrent from the charm. Found in chapter『Chapter 115』of the web novel.</p>
+<h2 id="speckle-rapier">Speckle Rapier</h2>
+<p>The Speckle Rapier is a good quality rapier made from modifying the Speckle Spear. It has a few enchantments which include Agility Up and Magic Up as well as a Blood Clean Grease. Compared to other weapons at this point, the bestowed effects are quite low but considering it was originally a spear it would have degraded during reconstruction. Rishia used this weapon until it broke during the fight with the cursed Itsuki. Found in chapter『Chapter 148/245』of the web novel.</p>
+<h2 id="firearms">Firearms</h2>
+<p>Firearms were proposed as weapons by many of summoned heroes, but most of their attempts failed due to the many factors that affect their performance in this world. Bullet speed is and power affected by the user's Status and there are various problems involving reloading, regulating gunpowder, and the like. Although fire magic can discharge the bullet, one can accelerate bullets using gunpowder but the damage isn't particularly high. In comparison to a bow, its maintenance and ammunition costs are much higher, so they aren't really used outside of Faubley. If one wants to attack at long distance, most would use a bow, magic, or a throwing weapon. Like in reality, if one shoots from too far away, the output drastically drops. If trained properly one can get quite strong, but it wouldn't be the strongest weapon. The conclusion is that firearms probably aren't as useful as they are in the Heroes world. Found in chapter『Chapter 310』of the web novel.</p>
+<h2 id="artillery">Artillery</h2>
+<p>Artillery works by the same principle as firearms. There is research underway towards the development of magic-firing cannons, but it would be much simpler, and quicker to just cast the fire magic oneself. Artillery and catapults can have quite a bit of output if they're used by people with high levels, so they're often brought forth in war. Found in chapter『Chapter 310』of the web novel. </p>
+
+						
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- footer section-->
+	<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt=""></a>
+                <p>5th Avenue st, manhattan<br>
+                New York, NY 10001</p>
+                <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Privacy Policy</a></li>	
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li> 
+                    <li><a href="#">Watchlist</a></li>	
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">User Guide</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email...">
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari. Zola by <a href="#" >Nezuko Yuuki</a></p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+	<!-- end of footer section-->
+
+	    <script src="http://127.0.0.1:1002/js/jquery.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins2.js"></script>
+	<script src="http://127.0.0.1:1002/js/custom.js"></script>
+<script src="/livereload.js?port=1003&mindelay=10"></script></body>
+</html>

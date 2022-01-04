@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	<!-- Basic need -->
+<title>The Rising of the Shield Hero</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="profile" href="#">
+
+<!--Google Font-->
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+<!-- Mobile specific meta -->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/plugins.css">
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/style.css">
+</head>
+<body>
+	<!--preloading-->
+	<div id="preloader">
+    <img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+	<!--end of preloading-->
+	<!--login form popup-->
+	<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                    </div>
+                    <a href="#">Forget password ?</a>
+                </div>
+            </div>
+        <div class="row">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <div class="row">
+            <p>Or via social</p>
+            <div class="social-btn-2">
+                <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+        <div class="row">
+            <button type="submit">sign up</button>
+        </div>
+        </form>
+    </div>
+</div>
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+    <div class="container">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li><a href="/">Home</a></li>	
+                        <li class="dropdown first">
+                            <a href="/media" data-hover="dropdown">
+                            media<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="/anime">Anime</a></li>
+                                <li><a href="/manga">Manga</a></li>
+                                <li><a href="moviegrid.html">Light Novel</a></li>
+                                <li><a href="moviegridfw.html">Web Novel</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            univers<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/univers/heroes">Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/heroes/legendary">Legendary Weapons</a></li>
+                                        <li><a href="/univers/heroes/vassal">Vassal Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/">Monsters <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/">Animal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/univers/magic">Magic</a></li>
+                                <li class="dropdown">
+                                    <a href="/univers/items">items <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/items/accessories">Accessories</a></li>
+                                        <li><a href="/univers/items/armor">Armor</a></li>
+                                        <li><a href="/univers/items/compounds">Compounds</a></li>
+                                        <li><a href="/univers/items/weapons">Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/univers/locations">Locations <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/locations">Rock Valley</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            charaters <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/charaters/legendary_heros">Legend Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/charaters/legendary_heros/naofumi">Naofumi Iwatani</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            explore <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="userfavoritegrid.html">videos</a></li>
+                                <li><a href="userfavoritelist.html">images</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">           
+                        <li><a href="#">Help</a></li>
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+	<!-- END | Header -->
+
+	
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> Compounds</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> Compounds</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<p>Compounds are items that are typically created through a skill called &quot;Compounding&quot; and can be created manually or through the use of a Legendary Weapon. Although many compounds can be made through the use of a Legendary Weapon, all products of the Legendary Weapon will be normal quality despite the input ingredients. (Using any low, mid, or high quality ingredient will result in normal quality products). Some naturally occurring plants share the same use or effect as certain compounds so they can sometimes be used as a substitute and are therefore included here as well.</p>
+<h2 id="nutritional-supplement">Nutritional Supplement</h2>
+<p>Nutritional Supplement is medicine that relieves fatigue. It is also effective as a method of rapidly recovering from malnourishment. Found in chapter 『Chapter 13』 of the web novel.</p>
+<h2 id="recovery-potion">Recovery Potion</h2>
+<p>Recovery Potion is medicine that treats certain illnesses. It is less effective against more severe diseases. Found in chapter 『Chapter 13』 of the web novel.</p>
+<h2 id="antidote">Antidote</h2>
+<p>Antidote is used to cure poisoning effects and is responsible for unlocking the Anti Poison Shield. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="herbicide">Herbicide</h2>
+<p>Herbicide is typically used to kill weeds, but can kill a large variety of plants and it happens to work pretty well against plant based monsters as well. It is responsible for unlocking the Glyphosate Shield. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="healing-ointment">Healing Ointment</h2>
+<p>Healing Ointment is a topical version of the recovery potion. It is used to treat minor wounds and scratches. It is responsible for unlocking the Medicine Shield. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="gunpowder">Gunpowder</h2>
+<p>Gunpowder is used to create explosions when set ablaze. By collecting it in bags and setting the bags on fire at the appropriate time, it is possible to create makeshift bombs however when Naofumi attempts to use them against an enemy the power of the bombs are degraded. They simply burn the bag to ash due to either his lack of attack stat or the shield's restriction on using weapons besides itself. It is responsible for unlocking the Plant Fire Shield. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="strong-acid">Strong acid</h2>
+<p>Strong acid is stored in a glass bottle and seems to be a little less acidic than sulfuric acid. It is used during inside the Spirit Tortoise on the Mimic Type Familiars that were imitating the floors and walls blocking further exploration to awaken them. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="magic-power-water">Magic Power water</h2>
+<p>Magic Power water restores magical power when drunk, but the materials are rare and hard to acquire. It is an expensive medical herb. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="holy-water">Holy Water</h2>
+<p>It is mentioned to cure the curse. It is mostly available at the church. The cost ranges from low/poor to good quality and charged a price accordingly </p>
+<h2 id="soul-healing-medicine">Soul Healing Medicine</h2>
+<p>Soul Healing Medicine restores SP. It also seems to be rare and difficult to prepare. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="insecticide">Insecticide</h2>
+<p>Insecticide is made by mixing and dissolving grass that repels insects until it hardens. It is used to kill insects and is also pretty effective against insect based monsters. It is responsible for unlocking the Killer Insect Shield. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="crackling-grass">Crackling grass</h2>
+<p>Crackling grass is some kind flammable grass that can be used as Gunpowder substitute. Found in chapter 『Chapter 35』 of the web novel.</p>
+<h2 id="lukol-pill">Lukol pill</h2>
+<p>The Lukol pill is an herbal supplement that aids in the recovery of SP, MP and status magic. During the fight with the Spirit Tortoise, Filo received it from the Queen to give to Naofumi to allow him to continue the fight. It can likely be made by compounding. Found in chapter 『Chapter 120』 of the web novel.</p>
+<h2 id="medicine-of-miracles">Medicine of Miracles</h2>
+<p>The Medicine of Miracles, also called Yggdrasil, is capable of curing most illnesses and boosting energy. Simplifying the compound, it's sap from a Sacred Tree. The medicine required ointment, magic water, soul healing water and a few others ingredients to be mixed together into a supernatant fluid with the toxic parts being filtered by exquisite distribution. The medicine could only be made once at the time due to the ingredients it costs and the risk of failure. Although the Spirit Tortoise Sacred Tree Shield assists in the creation of the medicine, it is so difficult to make that Naofumi could barely make one, even with the help of his shield. It is first referred to after the Zombie Dragon incident when it was used on the Old Hag that assisted in defending the village from the wave. The first time Naofumi created it he used it on Atla to cure her hereditary illness. It is an extremely valuable medicine. Found in chapter 『Chapter 158』 of the web novel. </p>
+
+						
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- footer section-->
+	<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt=""></a>
+                <p>5th Avenue st, manhattan<br>
+                New York, NY 10001</p>
+                <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Privacy Policy</a></li>	
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li> 
+                    <li><a href="#">Watchlist</a></li>	
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">User Guide</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email...">
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari. Zola by <a href="#" >Nezuko Yuuki</a></p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+	<!-- end of footer section-->
+
+	    <script src="http://127.0.0.1:1002/js/jquery.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins2.js"></script>
+	<script src="http://127.0.0.1:1002/js/custom.js"></script>
+<script src="/livereload.js?port=1003&mindelay=10"></script></body>
+</html>

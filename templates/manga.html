@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include "partials/_banner.html" %}
+
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				{{ page.content | safe }}
+				
+				<br>
+				<div class="topbar-filter fw">
+					<h2>Volume List</h2>
+				</div>
+				<div class="flex-wrap-movielist mv-grid-fw">
+					{% for asset in page.assets %}
+					{% if asset is matching("[.](jpg|png)$") %}
+						<div class="movie-item-style-2 movie-item-style-1">
+							<img src="{{ resize_image(path=asset, width=150, height=250, op="fill") }}" alt="">
+							<div class="mv-item-infor">
+								<h6><a href="{{ get_url(path=asset) }}">Vol</a></h6>
+							</div>
+						</div>
+					{% endif %}
+					{% endfor %}						
+				</div>		
+				<div class="topbar-filter">
+					<label>Movies per page:</label>
+					<select>
+						<option value="range">20 Movies</option>
+						<option value="saab">10 Movies</option>
+					</select>
+					
+					<div class="pagination2">
+						<span>Page 1 of 2:</span>
+						<a class="active" href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#">78</a>
+						<a href="#">79</a>
+						<a href="#"><i class="ion-arrow-right-b"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock main %}

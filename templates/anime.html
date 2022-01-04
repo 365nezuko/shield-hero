@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include "partials/_banner.html" %}
+<!-- blog detail section-->
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="blog-detail-ct">
+					
+					{{ page.content | safe }} 
+
+					<div class="flex-it flex-ct">
+						<audio controls>
+							<source src="{{ get_url(path="images/media/madkid-rise.mp3") | safe }}" type="audio/mpeg">
+						</audio>
+						<img src="{{ get_url(path="images/uploads/untitled.png") | safe }}" alt="">
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="sidebar">
+					<div class="ads">
+						<img src="{{ get_url(path="images/uploads/2.jpg") | safe }}" alt="">
+					</div>
+					<div class="sb-cate sb-it">
+						<h4 class="sb-title">Title</h4>
+						<p>Kanji/Kana: 盾の勇者の成り上がり</p>
+						<p>Rōmaji: Tate no Yūsha no Nariagari</p>
+						<p>English: The Rising of the Shield Hero</p>
+
+						<h4 class="sb-title">Anime Information</h4>
+						<p>Season(s): 1</p>
+						<p>Episodes: 25</p>
+						<p>Air Date: January 9th, 2019 (start)
+									June 26th, 2019 (end)</p>
+						<p>Status: Finished</p>
+						<P>Source Material: Light Novel & Manga</P>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end of  blog detail section-->
+{% endblock main %}

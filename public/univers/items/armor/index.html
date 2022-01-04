@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	<!-- Basic need -->
+<title>The Rising of the Shield Hero</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="profile" href="#">
+
+<!--Google Font-->
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+<!-- Mobile specific meta -->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/plugins.css">
+<link rel="stylesheet" href="http://127.0.0.1:1002/css/style.css">
+</head>
+<body>
+	<!--preloading-->
+	<div id="preloader">
+    <img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+	<!--end of preloading-->
+	<!--login form popup-->
+	<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                    </div>
+                    <a href="#">Forget password ?</a>
+                </div>
+            </div>
+        <div class="row">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <div class="row">
+            <p>Or via social</p>
+            <div class="social-btn-2">
+                <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+        <div class="row">
+            <button type="submit">sign up</button>
+        </div>
+        </form>
+    </div>
+</div>
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+    <div class="container">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt="" width="119" height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li><a href="/">Home</a></li>	
+                        <li class="dropdown first">
+                            <a href="/media" data-hover="dropdown">
+                            media<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="/anime">Anime</a></li>
+                                <li><a href="/manga">Manga</a></li>
+                                <li><a href="moviegrid.html">Light Novel</a></li>
+                                <li><a href="moviegridfw.html">Web Novel</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            univers<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/univers/heroes">Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/heroes/legendary">Legendary Weapons</a></li>
+                                        <li><a href="/univers/heroes/vassal">Vassal Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/">Monsters <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/">Animal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/univers/magic">Magic</a></li>
+                                <li class="dropdown">
+                                    <a href="/univers/items">items <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/items/accessories">Accessories</a></li>
+                                        <li><a href="/univers/items/armor">Armor</a></li>
+                                        <li><a href="/univers/items/compounds">Compounds</a></li>
+                                        <li><a href="/univers/items/weapons">Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/univers/locations">Locations <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/locations">Rock Valley</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            charaters <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/charaters/legendary_heros">Legend Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/charaters/legendary_heros/naofumi">Naofumi Iwatani</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            explore <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="userfavoritegrid.html">videos</a></li>
+                                <li><a href="userfavoritelist.html">images</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">           
+                        <li><a href="#">Help</a></li>
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+	<!-- END | Header -->
+
+	
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1> Armor</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> Armor</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<h2 id="barbarian-armor">Barbarian Armor</h2>
+<p>The Barbarian Armor was crafted by Erhard specifically for Naofumi with agility and defense in mind in preparation to his first wave of disaster. It is similar in quality to the Chain Mail he purchased on the first day he was summoned, but can also be upgraded. It is made of cheap copper and iron as well as Pill Rabbit and Porcupine hides, and a few Pikyu Pikyu feathers. The Pill Rabbit hides make up the fluffy wool portion around the neck, while the chest area is a metal plate. The joints aren't connected with metal ingots, but instead, Porcupine skins are used. The Pikyu Pikyu feathers can be felt well since they are stuffed full between the duel skin layers. It is similar to the type of armor bandit lords would wear and has a wild vibe. Found in『Chapter 17』of the web novel.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">Item 	            Acquired From 	                            Equipment bonus</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">Barbarian Armor 	crafted by Elhart for 130 silver coins      Defense Up</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">                    including the fees for copper and iron</span><span style="color:#c0c5ce;">
+</span></pre><h2 id="barbarian-armor-1">Barbarian Armor + 1</h2>
+<p>In preparation to the third wave, Naofumi asked Elhart for new weapons and Armor. Elhart stated he needed additional materials in order to improve Naofumi's current equipment so Naofumi offers the remnants of the Chimera and Zombie Dragon he had recently slain. With the new materials, Elhart was able to upgrade the Barbarian Armor into Barbarian Armor +1 and charges Naofumi a 5 gold service fee.</p>
+<p>The Chimera and Dragon bones were turned into a powder to reinforce the internal parts and their skins were worked to create strong, elastic clothes which resemble &quot;Hokuto no Ken clothing Mark 2&quot;. The metallic parts now are smaller but more resistant and the armor has a core/gem inherited from Zombie Dragon. The overall look remained similar.</p>
+<p>The armor has two forms according to the color of the gem. In the basic form the color of the gem core is purple, but, when resonating with other pieces of former dragon heart, became red, resembling the eye of the dragon. The entire armor transforms itself turning into a jet black dragon. Found in『Chapter 51』of the web novel.</p>
+<h2 id="penguin-plush">Penguin Plush</h2>
+<p>The Penguin Plush is a suit of armor similar to the Filo Plush however it's stats are significantly lower. The Penguin Plush is a Penguin-resembling doll wearing a Santa Suit that is acquired through a Karma Penguin drop. Its purpose is the same as a suit of armor with some additional abilities and perks. It can conform to the user's size but will transform them into a penguin-like creature. Its defensive abilities are slightly better than that of Naofumi's Barbarian Armor +1 and it is Filo's designated sleepwear. Rishia also wore one to compensate for her lower level after joining Naofumi's party however she upgrades to the Filo Plush soon after. Found in『Chapter 107』of the web novel.</p>
+<h2 id="filo-plush">Filo Plush</h2>
+<p>The Filo Plush is a suit of armor similar to the Penguin Plush however its stats are far superior and it also gives the wearer the Filolial Shield bonuses (growth correction) because of the Race Change Ability contained. This is a unique item made by Elhart using items and materials collected from Cal Mira Archipelago and inspired when Filo and Melty were playing nearby. Found in『Chapter 115』of the web novel.</p>
+<h2 id="barbarian-armor-2">Barbarian Armor + 2</h2>
+<p>After the fierce battle with the Spirit Tortoise, Naofumi's armor was damaged beyond the armor's 「Autonomous Repair」ability. Naofumi took it to Elhart for repairs. During the time it was being repaired, an incident occurred with Gaelion causing Naofumi to lose the core he was holding that used to be embedded within the Barbarian Armor + 1. After the said incident, Gaelion replaced the lost core with another that he somehow coughed up. The new core makes the armor lighter and gives a number of additional bonuses, however, the armor loses its「Darkness Resistance (High)」. Found in『Chapter 215』of the web novel.</p>
+<h2 id="barbarian-armor-2-cursed">Barbarian Armor + 2 (Cursed)</h2>
+<p>After the fierce battle with Kyo and the Spirit Tortoise, Naofumi's Barbarian armor +1 was damaged beyond the armor's「Autonomous Repair」ability and ceased to function due to crossing worlds. Naofumi left it to Romina, the jewel blacksmith, to make a new armor based on it. it's made using materials from the 4 holy beasts. Romina also found a way to merge the pieces of the armor's dragon emperor's core with a few pieces from her world. The new core is bigger and gives a number of additional bonuses, however, the armor loses it's Darkness resistance effects. As soon as it's worn, the armor curses the wearer and damages them. However, Naofumi's defense was high enough to ignore the damage, making it feel somewhat tight in some spots. Found in Vol 9 of the Light Novel. </p>
+
+						
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- footer section-->
+	<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="/"><img class="logo" src="http://127.0.0.1:1002/images/icon.png" alt=""></a>
+                <p>5th Avenue st, manhattan<br>
+                New York, NY 10001</p>
+                <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Privacy Policy</a></li>	
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li> 
+                    <li><a href="#">Watchlist</a></li>	
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">User Guide</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email...">
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari. Zola by <a href="#" >Nezuko Yuuki</a></p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+	<!-- end of footer section-->
+
+	    <script src="http://127.0.0.1:1002/js/jquery.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins.js"></script>
+	<script src="http://127.0.0.1:1002/js/plugins2.js"></script>
+	<script src="http://127.0.0.1:1002/js/custom.js"></script>
+<script src="/livereload.js?port=1003&mindelay=10"></script></body>
+</html>

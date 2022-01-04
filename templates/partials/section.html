@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "partials/_head.html" %}
+</head>
+<body class="about-page">
+
+	<!-- ========== Header ========== -->
+			
+	<header class="header">
+						
+		<div class="container">
+
+			<a href="/">
+				<img src="{{ get_url(path="assets/img/logo-black.png") | safe }}" alt="Faure Logo" class="logo">
+			</a>
+
+			<a href="#" class="open-nav open-nav-inverse"><i></i></a>
+
+			<nav class="navigation">
+				
+				<ul>
+					{% for item in config.extra.bbt_blog_menu %}
+					<li><a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">{{ item.name }}</a></li>
+					{% endfor %}
+				</ul>
+
+			</nav> <!-- /.navigation -->
+
+			<div class="clearfix"></div>
+			
+		</div> <!-- /.container -->
+
+	</header> <!-- /.header -->
+
+	<!-- ========== Main ========== -->
+    {% block main %}
+    
+
+
+
+
+    
+	{% endblock main %}
+
+
+	{% include "partials/_footer.html" %}
+
+
+	{% include "partials/_res_nav.html" %}
+</body>
+</html>

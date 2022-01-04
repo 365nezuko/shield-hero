@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>http://127.0.0.1:1002/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/anime/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/charaters/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/charaters/legendary_heros/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/charaters/legendary_heros/naofumi/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/charaters/legendary_heros/ren-amaki/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/manga/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/media/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/heroes/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/heroes/legendary/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/heroes/vassal/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/items/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/items/accessories/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/items/armor/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/items/compounds/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/items/weapons/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1002/univers/magic/</loc>
+            
+        </url>
+    
+</urlset>

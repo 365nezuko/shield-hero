@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	{% include "partials/_head.html" %}
+</head>
+<body>
+	<!--preloading-->
+	{% include "partials/_preloader.html" %}
+	<!--end of preloading-->
+	<!--login form popup-->
+	{% include "partials/_login.html" %}
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	{% include "partials/_signup.html" %}
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	{% include "partials/_nav.html" %}
+	<!-- END | Header -->
+
+	{% block main %}
+
+	
+
+	
+	{% endblock main %}
+
+	<!-- footer section-->
+	{% include "partials/_footer.html" %}
+	<!-- end of footer section-->
+
+	{% include "partials/_script.html" %}
+</body>
+</html>

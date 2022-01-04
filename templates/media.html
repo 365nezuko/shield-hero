@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+	{% include "partials/_head.html" %}
+</head>
+<body>
+<!--preloading-->
+{% include "partials/_preloader.html" %}
+<!--end of preloading-->
+<!--login form popup-->
+{% include "partials/_login.html" %}
+<!--end of login form popup-->
+<!--signup form popup-->
+{% include "partials/_signup.html" %}
+<!--end of signup form popup-->
+<!-- BEGIN | Header -->
+{% include "partials/_nav.html" %}
+<!-- END | Header -->
+
+<div class="hero hero3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- <h1> movie listing - list</h1>
+				<ul class="breadcumb">
+					<li class="active"><a href="#">Home</a></li>
+					<li> <span class="ion-ios-arrow-right"></span> movie listing</li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- celebrity single section-->
+
+<div class="page-single movie-single cebleb-single">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="mv-ceb">
+					<img src="images/uploads/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="movie-single-ct">
+					<h1 class="bd-hd">{{ section.title }}</h1>
+					<p class="ceb-single">Actor  |  Producer</p>
+					<div class="social-link cebsingle-socail">
+						<a href="#"><i class="ion-social-facebook"></i></a>
+						<a href="#"><i class="ion-social-twitter"></i></a>
+						<a href="#"><i class="ion-social-googleplus"></i></a>
+						<a href="#"><i class="ion-social-linkedin"></i></a>
+					</div>
+					<div class="movie-tabs">
+						<div class="tabs">
+							<ul class="tab-links tabs-mv">
+								<li class="active"><a href="#overview">Overview</a></li>
+								<li><a href="#plot"> Plot</a></li>
+								<li><a href="#mediaceb"> Media</a></li>                      
+							</ul>
+						    <div class="tab-content">
+						        <div id="overview" class="tab" class="tab active">
+                                    <div class="row">
+                                        <p>The Rising of the Shield Hero (盾の勇者の成り上がり Tate no Yūsha no Nariagari?), is a Japanese light novel series written by Aneko Yusagi. The novel series was adapted into a manga series by Aiya Kyū and published by Media Factory, with twelve volumes released as of December 21, 2018. In an interview, the manga artist said, "Comic Flapper’s editorial department told me about the opportunity, and I gleefully took it."</p>
+                                        <p>Both the novel and manga series were licensed by One Peace Books and were published in North American starting in September 2015. An anime television series adaptation produced by Kinema Citrus is scheduled to premiere in January 9, 2019.</p>
+                                    </div>
+                                </div>
+						        <div id="plot" class="tab">
+						           <div class="row">
+						            	<div class="rv-hd">
+											<div>
+						       	 				<h2>Plot</h2>
+											</div>							            						
+						            	</div>
+						            	<p><a href="/">Naofumi Iwatani</a> was summoned to a parallel world along with three other people to become the people of this world's Heroes. Each of the heroes were respectively equipped with their own legendary equipment when summoned. Naofumi happened to receive the Legendary Shield, the sole defensive equipment, while the others received weapons capable of attacking. Due to Naofumi's lack of charisma and experience, he ended up with only a single teammate, a beautiful woman, while others had several. Unfortunately, on his second day Naofumi was betrayed, falsely accused of rape, and robbed by the said teammate.</p>
+                                        <p>Shunned by everyone from the King to peasants, Naofumi's thoughts were filled with nothing but vengeance and hatred. Thus, his destiny in a parallel world begins. He tries to level up, despite his weak attack skills. He meets Berocas, a slave trader, Berocas shows him a little girl named <a href="/">Raphtalia</a> and he decides to buy her. </p>
+						            </div>
+						        </div>
+						        <div id="mediaceb" class="tab">
+						        	<div class="row">
+						            	<div class="rv-hd">
+											<div>
+						       	 				<h2>Web Novel</h2>
+											</div>							            						
+						            	</div>
+						            	<p>Main article: <a href="/">List of Web Novel Arcs</a></p>
+                                        <p>Aneko originally began the series as a web novel under the same name. </p>
+
+						            	<div class="rv-hd">
+											<div>
+						       	 				<h2>Light Novel</h2>
+											</div>							            						
+						            	</div>
+						            	<p>Main article: <a href="/">List of Light Novel Volumes</a></p>
+                                        <p>Originally published as a web novel, the series has been re-written with an expanded story-line. The series is currently published by Media Factory and features illustrations by Seira Minami. As of December 25, 2018, twenty volumes have been published.</p>
+                                        <p>A second light novel, titled The Reprise of the Spear Hero (槍の勇者のやり直し Yari no Yuusha no Yarinaoshi), has been published by Media Factory website since September 25, 2017. </p>
+
+                                        <div class="rv-hd">
+											<div>
+						       	 				<h2>Manga</h2>
+											</div>							            						
+						            	</div>
+						            	<p>Main article: <a href="/">Manga</a></p>
+                                        <P>The light novel series was adapted into a manga series by Aiya Kyū and published by Media Factory, with twelve volumes released as of December 21, 2018. Both the novel and manga series were licensed by One Peace Books and were published in North American starting in September 2015</P>
+                                        <p>A second manga, titled The Reprise of the Spear Hero (槍の勇者のやり直し Yari no Yuusha no Yarinaoshi), has been published by Media Factory website since December 22, 2017.</p>
+
+                                        <div class="rv-hd">
+											<div>
+						       	 				<h2>Anime</h2>
+											</div>							            						
+						            	</div>
+						            	<p>Main article: <a href="/">Anime</a></p>
+                                        <p>An anime adaptation was announced in June 2017. The television series is produced by Kinema Citrus and directed by Takao Abo, with Keigo Koyanagi handling series composition, Masahiro Suwa designing the characters and Kevin Penkin composing the music. The series premiered in January 9, 2019, on AT-X and other channels. It will run for two seasons. MADKID performed the series' opening theme song "RISE," while Chiai Fujikawa performed the series' ending theme song "Kimi no Namae" (きみの名前). Both Crunchyroll and Funimation stream the anime.</p>
+
+                                        <div class="rv-hd">
+											<div>
+						       	 				<h2>Music</h2>
+											</div>							            						
+						            	</div>
+						            	<p>Main article: <a href="/">Dusk</a></p>
+						            </div>
+					       	 	</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- celebrity single section-->
+
+<!-- footer section-->
+{% include "partials/_footer.html" %}
+<!-- end of footer section-->
+
+{% include "partials/_script.html" %}
+</body>
+</html>

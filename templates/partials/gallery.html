@@ -1,0 +1,8 @@
+{% for asset in page.assets %}
+  {% if asset is matching("[.](jpg|png)$") %}
+    <a href="{{ get_url(path=asset) }}">
+      <img src="{{ resize_image(path=asset, width=150, height=250, op="fill") }}" />
+    </a>
+    &ensp;
+  {% endif %}
+{% endfor %}
