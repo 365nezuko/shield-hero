@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
+<head>
+    <!-- Basic need -->
+<title>The Rising of the Shield Hero</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="profile" href="#">
+
+<!--Google Font-->
+<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+<!-- Mobile specific meta -->
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<!-- CSS files -->
+<link rel="stylesheet" href="http://127.0.0.1:5050/css/plugins.css">
+<link rel="stylesheet" href="http://127.0.0.1:5050/css/style.css">
+</head>
+<body>
+    <!--preloading-->
+	<div id="preloader">
+    <img class="logo" src="http://127.0.0.1:5050/images/icon.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+	<!--end of preloading-->
+	<!--login form popup-->
+	<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Login</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                    </div>
+                    <a href="#">Forget password ?</a>
+                </div>
+            </div>
+        <div class="row">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+        <div class="row">
+            <p>Or via social</p>
+            <div class="social-btn-2">
+                <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--end of login form popup-->
+	<!--signup form popup-->
+	<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+        
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+            <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+        <div class="row">
+            <button type="submit">sign up</button>
+        </div>
+        </form>
+    </div>
+</div>
+	<!--end of signup form popup-->
+	<!-- BEGIN | Header -->
+	<header class="ht-header">
+    <div class="container">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="/"><img class="logo" src="http://127.0.0.1:5050/images/icon.png" alt="" width="119" height="58"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li><a href="/">Home</a></li>	
+                        <li class="dropdown first">
+                            <a href="/media" data-hover="dropdown">
+                            media<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="/anime">Anime</a></li>
+                                <li><a href="/manga">Manga</a></li>
+                                <li><a href="moviegrid.html">Light Novel</a></li>
+                                <li><a href="moviegridfw.html">Web Novel</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            univers<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/univers/heroes">Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/heroes/legendary">Legendary Weapons</a></li>
+                                        <li><a href="/univers/heroes/vassal">Vassal Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/">Monsters <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/">Animal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/univers/magic">Magic</a></li>
+                                <li class="dropdown">
+                                    <a href="/univers/items">items <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/items/accessories">Accessories</a></li>
+                                        <li><a href="/univers/items/armor">Armor</a></li>
+                                        <li><a href="/univers/items/compounds">Compounds</a></li>
+                                        <li><a href="/univers/items/weapons">Weapons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/univers/locations">Locations <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/univers/locations">Rock Valley</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            charaters <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li class="dropdown">
+                                    <a href="/charaters/legendary_heros">Legend Heroes <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu level2">
+                                        <li><a href="/charaters/legendary_heros/naofumi">Naofumi Iwatani</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            explore <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="userfavoritegrid.html">videos</a></li>
+                                <li><a href="userfavoritelist.html">images</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+	<!-- END | Header -->
+
+    
+    
+    <div class="hero hero3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <h1> movie listing - list</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="page-single movie-single cebleb-single">
+        <div class="container">
+            <div class="row ipad-width">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="mv-ceb">
+                        <img src="anime.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="movie-single-ct">
+                        <h1 class="bd-hd">Itsuki Kawasumi</h1>
+                        <p class="ceb-single">Bow | Hero</p>
+                        <div class="social-link cebsingle-socail">
+                            <a href="#"><i class="ion-social-facebook"></i></a>
+                            <a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"><i class="ion-social-googleplus"></i></a>
+                            <a href="#"><i class="ion-social-linkedin"></i></a>
+                        </div>
+                        <div class="movie-tabs">
+                            <div class="tabs">
+                                <ul class="tab-links tabs-mv">
+                                    <li class="active"><a href="#overviewceb">Overview</a></li>
+                                    <li><a href="#personality"> Personality</a></li>
+                                    <li><a href="#background"> Background</a></li>
+                                    <li><a href="#mediaceb"> Media</a></li>                     
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="overviewceb" class="tab active">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <p>Naofumi Iwatani (岩谷尚文 Iwatani Naofumi?) is the protagonist of The Rising of the Shield Hero series.</p>
+                                                <p></p>He was a university student before being summoned to another world to serve as one of the four Legendary Heroes, the Shield Hero (盾の勇者 Tate no Yuusha?). </p>
+                                                <div class="title-hd-sm">
+                                                    <h4>Appearance</h4>
+                                                </div>
+                                                <div class="mvsingle-item ov-item">
+                                                    <p>Naofumi has short black hair which spikes in all directions and sharp green eyes. He often wears a scowl on his face because of his cynical outlook towards the world. He does, however, express gratitude from time to time.</p>
+                                                    <p>He often wears Barbarian Armor however if it's out of condition or undergoing an upgrade, he wears Magic Silver Armor. The weapon he wields is the Legendary Shield. </p>
+                                                </div>
+                                                <div class="title-hd-sm">
+                                                    <h4>Naofumi's Party</h4>
+                                                    <a href="#" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
+                                                </div>
+                                                <!-- movie cast -->
+                                                <div class="mvcast-item">											
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="1.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Raphtalia </a>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="2.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Filo </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="3.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Rishia Ivyred </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="4.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Raph-chan </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                                <div class="sb-it">
+                                                    <h6>Rōmaji:  <a href="#">Kawasumi Itsuki</a></h6>
+                                                    <h6>Kanji/Kana: <a href="#">川澄樹</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Age: <a href="#">17</a></h6>						            			
+                                                    <h6>Race: <a href="#">Human</a></h6>
+                                                    <h6>Gender: <a href="#">Male</a></h6>
+                                                    <h6>Eye Color: <a href="#">Gold</a></h6>
+                                                    <h6>Hair Color: <a href="#">Light Brown</a></h6>
+                                                </div>
+                                                <div><h5>Professional & Social Info </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Family: <a href="#">Unknown</a></h6>
+                                                    <h6>Status: <a href="#">Alive</a></h6>
+                                                    <h6>Occupation: <a href="#">Legendary Hero &amp; High School Student (former)</a></h6>
+                                                    <h6>Lv.: <a href="#">85</a></h6>
+                                                    <h6>Country: <a href="#">Melromarc, Rock Valley,Alternative Japan (former)</a></h6>
+                                                    <h6>Affiliation: <a href="#">Shield Hero, Sword Hero</a></h6>
+                                                    <h6>Epithet: <a href="#">The Bow Hero</a></h6>
+                                                    <h6>Weapon: <a href="#">Legendary Bow</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Anime: <a href="#">Episode 1 The Shield Hero</a></h6>					            			
+                                                    <h6>Manga: <a href="#">Chapter 1 A Royal Summons</a></h6>
+                                                    <h6>Light Novel: <a href="#">Volume 1, Chapter 2</a></h6>
+                                                    <h6>Web Novel: <a href="#">Chapter 2</a></h6>
+                                                    <h6>Japanese Voice: <a href="#">Yoshitaka Yamaya</a></h6>
+                                                    <h6>English Voice: <a href="#">Erik Scott Kimerer</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="personality" class="tab">
+                                    <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Naofumi's</h3>
+                                                    <h2>Personality</h2>
+                                                </div>							            						
+                                            </div>
+                                            <p>Naofumi had initially been an exceedingly trusting and positive person. He was also enthusiastic about his situation when initially summoned. However, his mentality abruptly changed after Malty S Melromarc, the princess of Melromarc, betrayed him.</p>
+                                            <p>Left penniless, framed as a rapist, and hated, Naofumi becomes distrustful, cynical, and spiteful towards the world. He could not trust anyone as a traveling companion except when they had a slave contract. He always assumes others are trying to get something from him.</p>
+                                            <p>The Princess' betrayal left him in an almost permanent state of anger and hostility, although he masks them behind a calm and level-headed personality. This mentality bites him back as he unknowingly pushes away genuine believers of the Shield Hero and Siltvelt envoys.</p>
+                                            <p>Due to Raphtalia and Filo, he becomes less inwardly hostile towards women but is still oblivious to their advances. After Raphtalia renewed her Slave Crest, when she had asked him what he thought of her body, exposed at the time for the application of the crest, he remained oblivious. At one point in time, he was somewhat amazed when Beloukas was willing to pay 35 gold pieces for Raphtalia after she became a beauty as well.</p>
+                                            <p>Eventually, he recovers more of his caring side and begins treating Raphtalia like a daughter rather than a slave.</p>
+                                            <p>By the time he sets up a base of operations in Rock Valley, he is visibly kind to the slaves under his command while maintaining his strict attitude, as he still would not hesitate to call for discipline when needed.</p>
+                                            <p>Naofumi purchases slaves, with the justification of giving them a better life. When he bought Raphtalia, he fed her well, gave her medicine, sheltered her, defended her from bullies, and rewarded her. He disciplines slaves, however, if they refuse to obey orders. He earned her loyalty through a caring yet stern treatment, such that she chooses to remain his slave when given the option to leave him. He took these actions because they're practical and beneficial to him in the long run ― an unhealthy, unfed, and half-dead slave would be useless, so he can't understand why someone would mistreat or neglect the slaves.</p>
+                                            <p>His treatment of Raphtalia extends to all of his slaves, with them coming to treat him like a parent figure. He spoils and rewards his slaves when they give it their all and perform to his expectations, cooking for them in the middle of the night when they were hungry. His humane slave ownership causes Rishia to wonder whether Naofumi was their slave.</p>
+                                            <p>Naofumi is considerate of others to an extent, willing to share a room on a boat with other adventurers and preventing what could have resulted in these ordinary adventurers, who paid a hefty amount to travel to Cal Mira Archipelago, facing eviction from the boat.</p>
+                                            <p>Naofumi is also very observant. He dislikes being ripped off and does not tolerate people stealing from him. For example, his grudge against Malty noticeably grew when he realized her ally took what was to be his new Shield and made a point to defeat him personally. When merchants tried to rip him off or saw bullies picking on Raphtalia, he sends literal monsters at them, since he can't attack due to only being able to wield a shield. He can be somewhat of a sadist in this sense, to the point Raphtalia tries to warn these bullies to run away.</p>
+                                            <p>He has a realistic approach to most things, as he sold the slave hunters to Siltvelt and used that money to buy back all of Raphtalia's villagers, much to the horror of Eclair and Raphtalia for his unorthodox actions. Realizing that he couldn't hand over the bandits to the guards, he extorted everything from them, as the guards may take the bandits side over him. Though his allies want him to behave heroically and be forgiving, he acts otherwise by holding a grudge and enjoying the misfortune of those he hates.</p>
+                                            <p>Naofumi, unlike some of the other heroes, is reasonable most of the time. He was convinced to stay in Melromarc after listening to the arguments of the queen and Fitoria for why he should stay even though he never received any funds from the crown until the end, even after the queen took charge since the nation was suffering from the Spirit Tortoise's rampage. Instead, he received a territory at his request.</p>
+                                            <p>Despite having the most villainous attitude and having a slightly evil way of solving things, ironically, Naofumi is perhaps the most effective of the heroes at getting things done. He even corrected the problems that the other three heroes either started or worsened. He also managed to deal with the Spirit Tortoise, an act which required him to cheer up allied troops, raise their morale, organize them, and effectively lead people whose past would undoubtedly put them at odds with him. Despite being portrayed as this unheroic and evil character, he still holds a basic set of morals, as he was willing to save even people who had scolded or otherwise wronged him.</p>   
+                                        </div>
+                                    </div>
+                                    <div id="background" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Naofumi's</h3>
+                                                    <h2>Background</h2>
+                                                </div>							            						
+                                            </div>
+                                                <p>From an early age, animals have naturally drawn towards him. He was well-liked by any animal he encounter and they acted friendlier towards him than most other people.</p>
+                                                <p>When he was a kid he was offered a ride by a dog in his local area even though the dog never once is given a ride to anyone. During his time in elementary school, he was never once pecked by the chickens who were notoriously known by his classmates to peck.</p>
+                                                <p>At the age of twenty, he was a sophomore in college and had a passion for video games, light novels, anime, and other otaku-like activities. He would often put his hobbies in front of his actual studies which caused his parents to believe he was a lost cause and focused all their attention on his younger brother by sending him to a famous prep-school in the hope to secure his future.</p>
+                                                <p>However, the pressure and the lack of freedom was too much for him, worn out by the stress of studying and jealous of his older brother's freedom he eventually turned into a troubled teen. He started dying his hair different colors and even swore around the house.</p>
+                                                <p>Naofumi was painfully aware of the fact that he was the main reason why his younger brother turned into such a trouble maker, he took it upon himself to help mend his younger brother's relationship towards the family by introducing him to a dating simulator game, his younger brother was hesitant at first but quickly got hooked and became an otaku himself.</p>
+                                                <p>Because his younger brother found a way to relieve his stress, he rededicated himself to his studies. Afterwards, he became the top of his class and even managed to get into a good high school.</p>
+                                                <p>Naofumi would later one day go the library to save money, where he would find The Record of the Four Holy Weapons losing consciousness while reading and find himself summoned to another world.</p>
+
+                                                <h2>Trivia</h2>
+
+                                                <p>Naofumi was summoned to this world while reading the book, "The Record of the Four Holy Weapons." As such, he is also the only hero among the Four Heroes who did not die prior to being summoned.</p>
+                                                <p>Naofumi can hold his liquor very well, as he ate multiple Lucor Berries without passing out or the least bit tipsy (Few Lucor Berries are dropped in a barrel of water to make alcohol. Eating one of these can risk your health).</p>
+                                            </div>
+                                        </div>
+                                    <div id="mediaceb" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h2>Videos and Pictures</h2>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Videos <span>(8)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item media-item">
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow"  href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Trailer:  Watch New Scenes</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: “Avengers Re-Assembled</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Robert Downey Jr</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Scarlett Johansson</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Director Joss Whedon</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Mark Ruffalo</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Official Trailer #2</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Photos <span> (21)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item">
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="" ><img src="images/uploads/image1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery"  href="images/uploads/image21.jpg" ><img src="images/uploads/image2.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image31.jpg" ><img src="images/uploads/image3.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image41.jpg" ><img src="images/uploads/image4.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image51.jpg" ><img src="images/uploads/image5.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image61.jpg" ><img src="images/uploads/image6.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image71.jpg" ><img src="images/uploads/image7.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image81.jpg" ><img src="images/uploads/image8.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image91.jpg" ><img src="images/uploads/image9.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image101.jpg" ><img src="images/uploads/image10.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image111.jpg" ><img src="images/uploads/image1-1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image121.jpg" ><img src="images/uploads/image12.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image131.jpg" ><img src="images/uploads/image13.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image141.jpg" ><img src="images/uploads/image14.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image151.jpg" ><img src="images/uploads/image15.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image161.jpg" ><img src="images/uploads/image16.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image171.jpg" ><img src="images/uploads/image17.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image181.jpg" ><img src="images/uploads/image18.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image191.jpg" ><img src="images/uploads/image19.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image201.jpg" ><img src="images/uploads/image20.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image211.jpg" ><img src="images/uploads/image2-1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+
+	<!-- footer section-->
+	<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="/"><img class="logo" src="http://127.0.0.1:5050/images/icon.png" alt=""></a>
+                <p>5th Avenue st, manhattan<br>
+                New York, NY 10001</p>
+                <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li> 
+                    <li><a href="#">Privacy Policy</a></li>	
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li> 
+                    <li><a href="#">Watchlist</a></li>	
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">User Guide</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item5">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email...">
+                </form>
+                <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari. Zola by <a href="#" >Nezuko Yuuki</a></p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+	<!-- end of footer section-->
+
+	    <script src="http://127.0.0.1:5050/js/jquery.js"></script>
+	<script src="http://127.0.0.1:5050/js/plugins.js"></script>
+	<script src="http://127.0.0.1:5050/js/plugins2.js"></script>
+	<script src="http://127.0.0.1:5050/js/custom.js"></script>
+<script src="/livereload.js?port=1000&mindelay=10"></script></body>
+</html>

@@ -1,0 +1,297 @@
+{% extends "characters/hero.html" %}
+
+    {% block content %}
+    <div class="page-single movie-single cebleb-single">
+        <div class="container">
+            <div class="row ipad-width">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="mv-ceb">
+                        <img src="anime.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="movie-single-ct">
+                        <h1 class="bd-hd">{{ page.title }}</h1>
+                        <p class="ceb-single">{{ page.extra.hero }} | Hero</p>
+                        <div class="social-link cebsingle-socail">
+                            <a href="#"><i class="ion-social-facebook"></i></a>
+                            <a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"><i class="ion-social-googleplus"></i></a>
+                            <a href="#"><i class="ion-social-linkedin"></i></a>
+                        </div>
+                        <div class="movie-tabs">
+                            <div class="tabs">
+                                <ul class="tab-links tabs-mv">
+                                    <li class="active"><a href="#overviewceb">Overview</a></li>
+                                    <li><a href="#personality"> Personality</a></li>
+                                    <li><a href="#background"> Background</a></li>
+                                    <li><a href="#mediaceb"> Media</a></li>                     
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="overviewceb" class="tab active">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <p>Naofumi Iwatani (岩谷尚文 Iwatani Naofumi?) is the protagonist of The Rising of the Shield Hero series.</p>
+                                                <p></p>He was a university student before being summoned to another world to serve as one of the four Legendary Heroes, the Shield Hero (盾の勇者 Tate no Yuusha?). </p>
+                                                <div class="title-hd-sm">
+                                                    <h4>Appearance</h4>
+                                                </div>
+                                                <div class="mvsingle-item ov-item">
+                                                    <p>Naofumi has short black hair which spikes in all directions and sharp green eyes. He often wears a scowl on his face because of his cynical outlook towards the world. He does, however, express gratitude from time to time.</p>
+                                                    <p>He often wears Barbarian Armor however if it's out of condition or undergoing an upgrade, he wears Magic Silver Armor. The weapon he wields is the Legendary Shield. </p>
+                                                </div>
+                                                <div class="title-hd-sm">
+                                                    <h4>Naofumi's Party</h4>
+                                                    <a href="#" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
+                                                </div>
+                                                <!-- movie cast -->
+                                                <div class="mvcast-item">											
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="1.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Raphtalia </a>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="2.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Filo </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="3.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Rishia Ivyred </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cast-it">
+                                                        <div class="cast-left cebleb-film">
+                                                            <img src="4.jpg" alt="">
+                                                            <div>
+                                                                <a href="#">Raph-chan </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                                <div class="sb-it">
+                                                    <h6>Rōmaji:  <a href="#">{{ page.extra.romaji }}</a></h6>
+                                                    <h6>Kanji/Kana: <a href="#">{{ page.extra.kana }}</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Age: <a href="#">{{ page.extra.age }}</a></h6>						            			
+                                                    <h6>Race: <a href="#">{{ page.extra.race }}</a></h6>
+                                                    <h6>Gender: <a href="#">{{ page.extra.gender }}</a></h6>
+                                                    <h6>Eye Color: <a href="#">{{ page.extra.eye }}</a></h6>
+                                                    <h6>Hair Color: <a href="#">{{ page.extra.hair }}</a></h6>
+                                                </div>
+                                                <div><h5>Professional & Social Info </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Family: <a href="#">{{ page.extra.family }}</a></h6>
+                                                    <h6>Status: <a href="#">{{ page.extra.status }}</a></h6>
+                                                    <h6>Occupation: <a href="#">{{ page.extra.occupation }}</a></h6>
+                                                    <h6>Lv.: <a href="#">{{ page.extra.lv }}</a></h6>
+                                                    <h6>Country: <a href="#">{{ page.extra.country }}</a></h6>
+                                                    <h6>Affiliation: <a href="#">{{ page.extra.affiliation }}</a></h6>
+                                                    <h6>Epithet: <a href="#">{{ page.extra.epithet }}</a></h6>
+                                                    <h6>Weapon: <a href="#">{{ page.extra.weapon }}</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Anime: <a href="#">{{ page.extra.anime }}</a></h6>					            			
+                                                    <h6>Manga: <a href="#">{{ page.extra.manga }}</a></h6>
+                                                    <h6>Light Novel: <a href="#">{{ page.extra.light }}</a></h6>
+                                                    <h6>Web Novel: <a href="#">{{ page.extra.web }}</a></h6>
+                                                    <h6>Japanese Voice: <a href="#">{{ page.extra.japanese_voice }}</a></h6>
+                                                    <h6>English Voice: <a href="#">{{ page.extra.english_voice }}</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="personality" class="tab">
+                                    <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Naofumi's</h3>
+                                                    <h2>Personality</h2>
+                                                </div>							            						
+                                            </div>
+                                            <p>Naofumi had initially been an exceedingly trusting and positive person. He was also enthusiastic about his situation when initially summoned. However, his mentality abruptly changed after Malty S Melromarc, the princess of Melromarc, betrayed him.</p>
+                                            <p>Left penniless, framed as a rapist, and hated, Naofumi becomes distrustful, cynical, and spiteful towards the world. He could not trust anyone as a traveling companion except when they had a slave contract. He always assumes others are trying to get something from him.</p>
+                                            <p>The Princess' betrayal left him in an almost permanent state of anger and hostility, although he masks them behind a calm and level-headed personality. This mentality bites him back as he unknowingly pushes away genuine believers of the Shield Hero and Siltvelt envoys.</p>
+                                            <p>Due to Raphtalia and Filo, he becomes less inwardly hostile towards women but is still oblivious to their advances. After Raphtalia renewed her Slave Crest, when she had asked him what he thought of her body, exposed at the time for the application of the crest, he remained oblivious. At one point in time, he was somewhat amazed when Beloukas was willing to pay 35 gold pieces for Raphtalia after she became a beauty as well.</p>
+                                            <p>Eventually, he recovers more of his caring side and begins treating Raphtalia like a daughter rather than a slave.</p>
+                                            <p>By the time he sets up a base of operations in Rock Valley, he is visibly kind to the slaves under his command while maintaining his strict attitude, as he still would not hesitate to call for discipline when needed.</p>
+                                            <p>Naofumi purchases slaves, with the justification of giving them a better life. When he bought Raphtalia, he fed her well, gave her medicine, sheltered her, defended her from bullies, and rewarded her. He disciplines slaves, however, if they refuse to obey orders. He earned her loyalty through a caring yet stern treatment, such that she chooses to remain his slave when given the option to leave him. He took these actions because they're practical and beneficial to him in the long run ― an unhealthy, unfed, and half-dead slave would be useless, so he can't understand why someone would mistreat or neglect the slaves.</p>
+                                            <p>His treatment of Raphtalia extends to all of his slaves, with them coming to treat him like a parent figure. He spoils and rewards his slaves when they give it their all and perform to his expectations, cooking for them in the middle of the night when they were hungry. His humane slave ownership causes Rishia to wonder whether Naofumi was their slave.</p>
+                                            <p>Naofumi is considerate of others to an extent, willing to share a room on a boat with other adventurers and preventing what could have resulted in these ordinary adventurers, who paid a hefty amount to travel to Cal Mira Archipelago, facing eviction from the boat.</p>
+                                            <p>Naofumi is also very observant. He dislikes being ripped off and does not tolerate people stealing from him. For example, his grudge against Malty noticeably grew when he realized her ally took what was to be his new Shield and made a point to defeat him personally. When merchants tried to rip him off or saw bullies picking on Raphtalia, he sends literal monsters at them, since he can't attack due to only being able to wield a shield. He can be somewhat of a sadist in this sense, to the point Raphtalia tries to warn these bullies to run away.</p>
+                                            <p>He has a realistic approach to most things, as he sold the slave hunters to Siltvelt and used that money to buy back all of Raphtalia's villagers, much to the horror of Eclair and Raphtalia for his unorthodox actions. Realizing that he couldn't hand over the bandits to the guards, he extorted everything from them, as the guards may take the bandits side over him. Though his allies want him to behave heroically and be forgiving, he acts otherwise by holding a grudge and enjoying the misfortune of those he hates.</p>
+                                            <p>Naofumi, unlike some of the other heroes, is reasonable most of the time. He was convinced to stay in Melromarc after listening to the arguments of the queen and Fitoria for why he should stay even though he never received any funds from the crown until the end, even after the queen took charge since the nation was suffering from the Spirit Tortoise's rampage. Instead, he received a territory at his request.</p>
+                                            <p>Despite having the most villainous attitude and having a slightly evil way of solving things, ironically, Naofumi is perhaps the most effective of the heroes at getting things done. He even corrected the problems that the other three heroes either started or worsened. He also managed to deal with the Spirit Tortoise, an act which required him to cheer up allied troops, raise their morale, organize them, and effectively lead people whose past would undoubtedly put them at odds with him. Despite being portrayed as this unheroic and evil character, he still holds a basic set of morals, as he was willing to save even people who had scolded or otherwise wronged him.</p>   
+                                        </div>
+                                    </div>
+                                    <div id="background" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Naofumi's</h3>
+                                                    <h2>Background</h2>
+                                                </div>							            						
+                                            </div>
+                                                <p>From an early age, animals have naturally drawn towards him. He was well-liked by any animal he encounter and they acted friendlier towards him than most other people.</p>
+                                                <p>When he was a kid he was offered a ride by a dog in his local area even though the dog never once is given a ride to anyone. During his time in elementary school, he was never once pecked by the chickens who were notoriously known by his classmates to peck.</p>
+                                                <p>At the age of twenty, he was a sophomore in college and had a passion for video games, light novels, anime, and other otaku-like activities. He would often put his hobbies in front of his actual studies which caused his parents to believe he was a lost cause and focused all their attention on his younger brother by sending him to a famous prep-school in the hope to secure his future.</p>
+                                                <p>However, the pressure and the lack of freedom was too much for him, worn out by the stress of studying and jealous of his older brother's freedom he eventually turned into a troubled teen. He started dying his hair different colors and even swore around the house.</p>
+                                                <p>Naofumi was painfully aware of the fact that he was the main reason why his younger brother turned into such a trouble maker, he took it upon himself to help mend his younger brother's relationship towards the family by introducing him to a dating simulator game, his younger brother was hesitant at first but quickly got hooked and became an otaku himself.</p>
+                                                <p>Because his younger brother found a way to relieve his stress, he rededicated himself to his studies. Afterwards, he became the top of his class and even managed to get into a good high school.</p>
+                                                <p>Naofumi would later one day go the library to save money, where he would find The Record of the Four Holy Weapons losing consciousness while reading and find himself summoned to another world.</p>
+
+                                                <h2>Trivia</h2>
+
+                                                <p>Naofumi was summoned to this world while reading the book, "The Record of the Four Holy Weapons." As such, he is also the only hero among the Four Heroes who did not die prior to being summoned.</p>
+                                                <p>Naofumi can hold his liquor very well, as he ate multiple Lucor Berries without passing out or the least bit tipsy (Few Lucor Berries are dropped in a barrel of water to make alcohol. Eating one of these can risk your health).</p>
+                                            </div>
+                                        </div>
+                                    <div id="mediaceb" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h2>Videos and Pictures</h2>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Videos <span>(8)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item media-item">
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow"  href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Trailer:  Watch New Scenes</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: “Avengers Re-Assembled</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Robert Downey Jr</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Scarlett Johansson</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Director Joss Whedon</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Mark Ruffalo</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Official Trailer #2</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Photos <span> (21)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item">
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="" ><img src="images/uploads/image1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery"  href="images/uploads/image21.jpg" ><img src="images/uploads/image2.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image31.jpg" ><img src="images/uploads/image3.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image41.jpg" ><img src="images/uploads/image4.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image51.jpg" ><img src="images/uploads/image5.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image61.jpg" ><img src="images/uploads/image6.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image71.jpg" ><img src="images/uploads/image7.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image81.jpg" ><img src="images/uploads/image8.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image91.jpg" ><img src="images/uploads/image9.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image101.jpg" ><img src="images/uploads/image10.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image111.jpg" ><img src="images/uploads/image1-1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image121.jpg" ><img src="images/uploads/image12.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image131.jpg" ><img src="images/uploads/image13.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image141.jpg" ><img src="images/uploads/image14.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image151.jpg" ><img src="images/uploads/image15.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image161.jpg" ><img src="images/uploads/image16.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image171.jpg" ><img src="images/uploads/image17.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image181.jpg" ><img src="images/uploads/image18.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image191.jpg" ><img src="images/uploads/image19.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image201.jpg" ><img src="images/uploads/image20.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image211.jpg" ><img src="images/uploads/image2-1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    {% endblock content %}

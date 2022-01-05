@@ -5667,12 +5667,12 @@ ul {
   height: 598px;
 }
 .hero3 {
-  background: url('../images/uploads/cover2.jpg') no-repeat;
+  background: url('../images/uploads/cover3.jpg') no-repeat;
   height: 538px;
 }
 .common-hero {
   height: 385px;
-  background: url('../images/uploads/cover2.jpg') no-repeat;
+  background: url('../images/uploads/cover3.jpg') no-repeat;
 }
 .common-hero:before {
   background-color: rgba(0, 0, 0, 0.4);
@@ -7131,7 +7131,7 @@ p.ceb-single {
   text-align: right;
 }
 .sliderv2 {
-  background: url('../images/uploads/cover2.jpg') no-repeat;
+  background: url('../images/uploads/cover3.jpg') no-repeat;
   padding-bottom: 0;
   padding-top: 180px;
   overflow: hidden;
@@ -8139,7 +8139,7 @@ header#headerv3-light {
   }
 }
 footer {
-  background: url('../images/uploads/cover2.jpg') no-repeat;
+  background: url('../images/uploads/cover3.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }

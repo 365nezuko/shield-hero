@@ -2,92 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1002/</loc>
+            <loc>http://127.0.0.1:5050/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/anime/</loc>
+            <loc>http://127.0.0.1:5050/anime/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/charaters/</loc>
+            <loc>http://127.0.0.1:5050/charaters/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/charaters/legendary_heros/</loc>
+            <loc>http://127.0.0.1:5050/charaters/legendary_heros/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/charaters/legendary_heros/naofumi/</loc>
+            <loc>http://127.0.0.1:5050/charaters/legendary_heros/itsuki/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/charaters/legendary_heros/ren-amaki/</loc>
+            <loc>http://127.0.0.1:5050/charaters/legendary_heros/motoyasu/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/manga/</loc>
+            <loc>http://127.0.0.1:5050/charaters/legendary_heros/naofumi/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/media/</loc>
+            <loc>http://127.0.0.1:5050/charaters/legendary_heros/ren/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/</loc>
+            <loc>http://127.0.0.1:5050/manga/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/heroes/</loc>
+            <loc>http://127.0.0.1:5050/media/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/heroes/legendary/</loc>
+            <loc>http://127.0.0.1:5050/univers/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/heroes/vassal/</loc>
+            <loc>http://127.0.0.1:5050/univers/heroes/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/items/</loc>
+            <loc>http://127.0.0.1:5050/univers/heroes/legendary/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/items/accessories/</loc>
+            <loc>http://127.0.0.1:5050/univers/heroes/vassal/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/items/armor/</loc>
+            <loc>http://127.0.0.1:5050/univers/items/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/items/compounds/</loc>
+            <loc>http://127.0.0.1:5050/univers/items/accessories/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/items/weapons/</loc>
+            <loc>http://127.0.0.1:5050/univers/items/armor/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1002/univers/magic/</loc>
+            <loc>http://127.0.0.1:5050/univers/items/compounds/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:5050/univers/items/weapons/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:5050/univers/magic/</loc>
             
         </url>
     

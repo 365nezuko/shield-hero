@@ -22,52 +22,18 @@
 	<div class="container">
 		<div class="row ipad-width2">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="topbar-filter">
-					<p>Found <span>1,608 celebrities</span> in total</p>
-					<label>Sort by:</label>
-					<select>
-						<option value="popularity">Popularity Descending</option>
-						<option value="popularity">Popularity Ascending</option>
-						<option value="rating">Rating Descending</option>
-						<option value="rating">Rating Ascending</option>
-						<option value="date">Release date Descending</option>
-						<option value="date">Release date Ascending</option>
-					</select>
-					<a href="celebritylist.html" class="list"><i class="ion-ios-list-outline "></i></a>
-					<a  href="celebritygrid01.html" class="grid"><i class="ion-grid active"></i></a>
-				</div>
 				<div class="celebrity-items">
 
+					{% for page in section.pages %}
 					<div class="ceb-item">
-						<a href="celebritysingle.html"><img src="{{ get_url(path="images/characters/naofumi.png") | safe }}" alt=""></a>
+						<a href="{{ page.permalink }}"><img src="{{ page.permalink }}image.png" alt=""></a>
 						<div class="ceb-infor">
-							<h2><a href="/charaters/legendary_heros/naofumi/">Naofumi Iwatani</a></h2>
+							<h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
 							<span>Sheild Hero</span>
 						</div>
 					</div>
+					{% endfor %}
 
-					<div class="ceb-item">
-						<a href="celebritylist.html"><img src="{{ get_url(path="images/characters/ren.png") | safe }}" alt=""></a>						
-						<div class="ceb-infor">
-							<h2><a href="celebritylist.html">Ren Amaki</a></h2>
-							<span>Sword Hero</span>
-						</div>
-					</div>
-					<div class="ceb-item">
-						<a href="celebritysingle.html"><img src="{{ get_url(path="images/characters/motoyasu.png") | safe }}" alt=""></a>
-						<div class="ceb-infor">
-							<h2><a href="celebritylist.html">Motoyasu Kitamura</a></h2>
-							<span>Spear Hero</span>
-						</div>
-					</div>
-					<div class="ceb-item">
-						<a href="celebritysingle.html"> <img src="{{ get_url(path="images/characters/itsuki.png") | safe }}" alt=""></a>
-						
-						<div class="ceb-infor">
-							<h2><a href="celebritylist.html">Itsuki Kawasumi</a></h2>
-							<span>Bow Hero</span>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

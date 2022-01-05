@@ -2,7 +2,7 @@
 title = "Naofumi Iwatani"
 weight = 1
 
-template = "characters/naofumi_iwatani.html"
+template = "characters/naofumi.html"
 
 [extra]
 nickname = "Kiddo"
