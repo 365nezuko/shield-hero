@@ -2,117 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:5050/</loc>
+            <loc>https://example.com/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/anime/</loc>
+            <loc>https://example.com/anime/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/</loc>
+            <loc>https://example.com/charaters/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/legendary_heros/</loc>
+            <loc>https://example.com/charaters/legendary_heros/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/legendary_heros/itsuki/</loc>
+            <loc>https://example.com/charaters/legendary_heros/itsuki/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/legendary_heros/motoyasu/</loc>
+            <loc>https://example.com/charaters/legendary_heros/motoyasu/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/legendary_heros/naofumi/</loc>
+            <loc>https://example.com/charaters/legendary_heros/naofumi/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/legendary_heros/ren/</loc>
+            <loc>https://example.com/charaters/legendary_heros/ren/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/naofumi_party/</loc>
+            <loc>https://example.com/charaters/naofumi_party/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/naofumi_party/filo/</loc>
+            <loc>https://example.com/charaters/naofumi_party/filo/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/charaters/naofumi_party/raphtalia/</loc>
+            <loc>https://example.com/charaters/naofumi_party/raphtalia/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/manga/</loc>
+            <loc>https://example.com/manga/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/media/</loc>
+            <loc>https://example.com/media/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/</loc>
+            <loc>https://example.com/univers/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/heroes/</loc>
+            <loc>https://example.com/univers/heroes/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/heroes/legendary/</loc>
+            <loc>https://example.com/univers/heroes/legendary/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/heroes/vassal/</loc>
+            <loc>https://example.com/univers/heroes/vassal/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/items/</loc>
+            <loc>https://example.com/univers/items/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/items/accessories/</loc>
+            <loc>https://example.com/univers/items/accessories/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/items/armor/</loc>
+            <loc>https://example.com/univers/items/armor/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/items/compounds/</loc>
+            <loc>https://example.com/univers/items/compounds/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/items/weapons/</loc>
+            <loc>https://example.com/univers/items/weapons/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:5050/univers/magic/</loc>
+            <loc>https://example.com/univers/magic/</loc>
             
         </url>
     
