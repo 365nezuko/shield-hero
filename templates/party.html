@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="hero common-hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero-ct">
+					<h1>{{ section.title }}</h1>
+					<ul class="breadcumb">
+						<li class="active"><a href="/">Home</a></li>
+						<li> <span class="ion-ios-arrow-right"></span> {{ section.title }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- celebrity grid v1 section-->
+<div class="page-single">
+	<div class="container">
+		<div class="row ipad-width2">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="celebrity-items">
+
+					{% for page in section.pages %}
+					<div class="ceb-item">
+						<a href="{{ page.permalink }}"><img src="{{ page.permalink }}image.png" alt=""></a>
+						<div class="ceb-infor">
+							<h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+							<span>{{ page.extra.occupation }}</span>
+						</div>
+					</div>
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of celebrity grid v1 section-->
+{% endblock main %}

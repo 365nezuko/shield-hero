@@ -1,0 +1,264 @@
+{% extends "characters/hero.html" %}
+
+    {% block content %}
+    <div class="page-single movie-single cebleb-single">
+        <div class="container">
+            <div class="row ipad-width">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="mv-ceb">
+                        <img src="{{ page.permalink }}anime.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="movie-single-ct">
+                        <h1 class="bd-hd">{{ page.title }}</h1>
+                        <p class="ceb-single">{{ page.extra.occupation }}</p>
+                        <div class="social-link cebsingle-socail">
+                            <a href="#"><i class="ion-social-facebook"></i></a>
+                            <a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"><i class="ion-social-googleplus"></i></a>
+                            <a href="#"><i class="ion-social-linkedin"></i></a>
+                        </div>
+                        <div class="movie-tabs">
+                            <div class="tabs">
+                                <ul class="tab-links tabs-mv">
+                                    <li class="active"><a href="#overviewceb">Overview</a></li>
+                                    <li><a href="#personality"> Personality</a></li>
+                                    <li><a href="#background"> Background</a></li>
+                                    <li><a href="#mediaceb"> Media</a></li>                     
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="overviewceb" class="tab active">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                                <p>Filo (フィーロ Fīro?) is a Filolial purchased alongside Raphtalia during the outset of the story. She develops into a Queen due to her association with the Shield Hero, and is a staunch ally to the hero, as the possessor of unique class-up effects. She also becomes particularly close to the Second Princess Melty. </p>
+                                                <div class="title-hd-sm">
+                                                    <h4>Appearance</h4>
+                                                </div>
+                                                <div class="mvsingle-item ov-item">
+                                                    <p>Filo's appearance has changed many times, depending on her form. </p>
+                                                    <p>After several weeks of traveling with Naofumi, Filo's body inexplicably changes and she gained the appearance of a beautiful teenager or young adult. It is revealed that demi-humans grow in relation to the progression of their levels, which led to Filo's rapid development (though it is believed that she still has the mental maturity of a child, as seen when she stares enviously at children playing with a ball). </p>
+                                                    <p>During their travel to Other World, L'Arc mentioned to Naofumi that Raphtalia reverted back to her Child-self, for her level was reset to one and she had to grind to reach her adulthood in that world before reuniting with Naofumi. In her adult form, Raphtalia began to wear clothing much more fitting for a warrior, which consisted of a hide breastplate, skirt, lace-up boots and a pair of gloves. Raphtalia also switched from a small knife to a full-sized sword during this time. </p>
+                                                </div>
+                                                <div class="title-hd-sm">
+                                                    <h5>Filolial Form</h5>
+                                                </div>
+                                                    <p>When Filo was born, she was a small, pink chick who looked to be about the size of an average chick. After a day, and some leveling, she had grown to the size of a steamed bun. Filo's third appearance change would be to that of a small, baby ostrich, not quite large enough to ride on, but definitely larger than her two prior forms. Filo would then grow into her fourth beast transformation, which was the size of a normal ostrich, and she was now capable of being ridden. It should also be noted that Filo's feathers had started to turn into a much lighter shade of pink than in her prior forms, and were beginning to turn white. Filo's last and most current form is larger than an ostrich and resembles an owl, her feathers are also almost completely white aside from a small ruffle on her abdomen and some feathers on her wings which still contain pink. </p>
+                                                <div class="title-hd-sm">
+                                                    <h5>Human Form</h5>
+                                                </div>
+                                                <p>Filo can change to her human form that can take the appearance of a young girl with wings on her back. She wears a white dress with a blue bow on the center made out of magical crystal threads so they don't break when she transforms into her beast form.</p>
+                                                <p>Her eyes in both forms are blue. Filo later gains a cowlick (a third long feather in her Filolial Form) that sticks vertically out of her head. This hair is a symbol of Filo's succession from the Filolial Queen, Fitoria. </p>
+                                            </div>
+                                            <div class="col-md-4 col-xs-12 col-sm-12">
+                                                <div class="sb-it">
+                                                    <h6>Rōmaji:  <a href="#">{{ page.extra.romaji }}</a></h6>
+                                                    <h6>Kanji/Kana: <a href="#">{{ page.extra.kana }}</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Age: <a href="#">{{ page.extra.age }}</a></h6>						            			
+                                                    <h6>Race: <a href="#">{{ page.extra.race }}</a></h6>
+                                                    <h6>Gender: <a href="#">{{ page.extra.gender }}</a></h6>
+                                                    <h6>Eye Color: <a href="#">{{ page.extra.eye }}</a></h6>
+                                                    <h6>Hair Color: <a href="#">{{ page.extra.hair }}</a></h6>
+                                                </div>
+                                                <div><h5>Professional & Social Info </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Master: <a href="#">{{ page.extra.master }}</a></h6>
+                                                    <h6>Status: <a href="#">{{ page.extra.status }}</a></h6>
+                                                    <h6>Occupation: <a href="#">{{ page.extra.occupation }}</a></h6>
+                                                    <h6>Lv.: <a href="#">{{ page.extra.lv }}</a></h6>
+                                                    <h6>Country: <a href="#">{{ page.extra.country }}</a></h6>
+                                                    <h6>Affiliation: <a href="#">{{ page.extra.affiliation }}</a></h6>
+                                                    <h6>Epithet: <a href="#">{{ page.extra.epithet }}</a></h6>
+                                                    <h6>Weapon: <a href="#">{{ page.extra.weapon }}</a></h6>
+                                                </div>
+                                                <div><h5>Physical Information </h5></div>
+                                                    <br>
+                                                <div class="sb-it">
+                                                    <h6>Anime: <a href="#">{{ page.extra.anime }}</a></h6>					            			
+                                                    <h6>Manga: <a href="#">{{ page.extra.manga }}</a></h6>
+                                                    <h6>Light Novel: <a href="#">{{ page.extra.light }}</a></h6>
+                                                    <h6>Web Novel: <a href="#">{{ page.extra.web }}</a></h6>
+                                                    <h6>Drama Voice: <a href="#">{{ page.extra.drama_voice }}</a></h6>
+                                                    <h6>Japanese Voice: <a href="#">{{ page.extra.japanese_voice }}</a></h6>
+                                                    <h6>English Voice: <a href="#">{{ page.extra.english_voice }}</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="personality" class="tab">
+                                    <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Filo's</h3>
+                                                    <h2>Personality</h2>
+                                                </div>							            						
+                                            </div>
+                                            <p>Filo's personality has varied greatly throughout the story. Filo originally acted like any normal animal, prior to her transformation ability. She ate a lot, showed a great amount of affection toward Naofumi, and even convinced Naofumi to sleep in a stable with her because she was lonely, by pulling on his mantle. </p>
+                                            <p>After Filo gained the ability to transform, her personality became that of a spoiled child; she would refuse orders until she was fed, would throw fits when Naofumi wouldn't sleep in the same bed as her, and would randomly transform whenever she saw fit. In an attempt to try and fix her personality Naofumi threatened to sell her (and with a little help from an advanced slave mark) Filo began to behave much more appropriately. Since that point, Filo became a trustworthy and reliable member of Naofumi's party. Filo since has worked hard to gain Naofumi's approval so that she won't be pushed aside if something should happen to her (though it is unlikely Naofumi would really ever do that and instead used it as a threat to discipline her). </p>
+                                            <p>Filo has also shown to be very caring, she loves Naofumi very much and considers him "her property" and often reminds Raphtalia that she "won't lose to her." She has shown a great affection toward Melty, the second princess of Melromarc. </p>
+                                            <p>According to Naofumi, Filo was interested only in food, cart, and Melty. In nature, she hates dragons. </p>
+                                            <p>Though she is comparatively smart to others of her own kind, she mostly an airhead and doesn't pay much attention to anything that she has no interest in. She will often doze off when others are talking about things she has no interest in. She has a poor understanding of behavior, culture and common sense</p>
+                                            <p>She is attracted to shiny objects, music and loves to sing. Filo also loves to swim and can go underwater holding her breath for hours. Since she is a bird, she collects all the shiny objects as her treasure though they really are just trash. She enjoys singing and learns a song in every tavern they visit by watching the regular patrons, before joining them. Filo cares for children and plays with them, whenever she came across them. She also sings a lullaby for the new slaves of Rock Valley village, to make them sleep comfortably. She tried to lift the spirit of the news slaves to relieve them of their past trauma.</p>
+                                            <p>Filo has a boundless appetite and has poor table manners which contradict her appearance. She eats everything and anything, she even once remarked that she thought that her own kind looks delicious and was ready to eat a rotten dragon corpse. But, she hates alcohol and rucolu fruit. </p>
+                                            <p>Filo is way too talkative and most of her conversation don't make any sense. Filo can figure out and say exactly the things people are trying to hide. Her bluntness is mostly due to her naïve personality which sometimes deepens the other person's wounds. </p>
+                                            <p>Filo has a strange way of associating others with items rather than remembering by names, like calling Motoyasu as Spear, Itsuki as Bow, Ren as Sword, Eclair as Red Veggie, Ost as Turtle lady, Glass as Fan lady or a see-through person, Therese as sparkle person, L'Arc as Scythe, Kizuna as fishing lady, etc. Though there was no ill intent and her way of remembering them, many find it to be hurtful for being remembered anything other than their name. Once she referred Imya as a delicious looking kid which became a horror for the new slave kids</p>
+                                            <p>Filo is a good judge of character and is able to see through anyone, this is shown many times such as Filo refusing to let Raphtalia have Naofumi (knowing Raphtalia's feelings for him), Naofumi's strange or rude thoughts, Motoyasu's intention and also Itsuki's personality. Lies and evil intention of people like Mald, Malty, and Jaralis. It was this trait of Filo that convinced Naofumi to trust Melty, as Filo completely trust her. She’s been reserved as of late, but from the start, she’s been overly intrusive. She can see through lies and exposed many. Naofumi used her to verify the credibility of the truth told by people. </p>
+                                            <p>After spending time with Melty, she displays more fitting behavior and has corrected most of her flaws. She also learned many social and cultural behavior from Melty. In times, she was clearly disturbed by Naofumi's threatening of bandits about using her to eat them. This was not the case earlier. Her personality matures, but she still retains many childish traits. </p>
+                                            <p>If nothing else, Filo completely lives and rely on her instinct which are absolute according to Naofumi</p>
+
+                                        </div>
+                                    </div>
+                                    <div id="background" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h3>Filo's</h3>
+                                                    <h2>Background</h2>
+                                                </div>							            						
+                                            </div>
+                                                <p>Filo was originally born from a monster egg which Naofumi purchased from Beloukas, which he used as a business front. </p>
+                                                <P>Once, Filo overheard the slave merchant talking about her and that the filolial egg which he sold to Naofumi was a cheap one. The egg was from two flightless birds which was meant to be raised for the meat. The egg was worth 50 pieces of silver the same as the adult species. </P>
+                                                <p>Her fate changed when Naofumi picked her egg and raised it. </p>
+                                            
+                                                <h2>Trivia</h2>
+
+                                                <p>Filo's egg was purchased for 100 silvers, Her advanced monster crest was 200 pieces of Silver and 40 pieces of silver for her clothes, making it a 340 silver pieces as her initial investment. </p>
+                                                <p>The Slave trader was willing to purchase Filo for 30 gold coins. </p>
+                                                <p>In the anime, Filo in her Filolial form hasn't grown her third antenna feather after receiving her Queen succession from Fitoria. </p>
+                                            </div>
+                                        </div>
+                                    <div id="mediaceb" class="tab">
+                                        <div class="row">
+                                            <div class="rv-hd">
+                                                <div>
+                                                    <h2>Videos and Pictures</h2>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Videos <span>(8)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item media-item">
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow"  href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Trailer:  Watch New Scenes</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: “Avengers Re-Assembled</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Robert Downey Jr</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Scarlett Johansson</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
+                                                        <p class="time"> 1: 31</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Director Joss Whedon</a></h6>
+                                                        <p class="time"> 1: 03</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Interview: Mark Ruffalo</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vd-item">
+                                                    <div class="vd-it">
+                                                        <img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
+                                                        <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+                                                    </div>
+                                                    <div class="vd-infor">
+                                                        <h6> <a href="#">Official Trailer #2</a></h6>
+                                                        <p class="time"> 3:27</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title-hd-sm">
+                                                <h4>Photos <span> (21)</span></h4>
+                                            </div>
+                                            <div class="mvsingle-item">
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="" ><img src="images/uploads/image1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery"  href="images/uploads/image21.jpg" ><img src="images/uploads/image2.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image31.jpg" ><img src="images/uploads/image3.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image41.jpg" ><img src="images/uploads/image4.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image51.jpg" ><img src="images/uploads/image5.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image61.jpg" ><img src="images/uploads/image6.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image71.jpg" ><img src="images/uploads/image7.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image81.jpg" ><img src="images/uploads/image8.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image91.jpg" ><img src="images/uploads/image9.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image101.jpg" ><img src="images/uploads/image10.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image111.jpg" ><img src="images/uploads/image1-1.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image121.jpg" ><img src="images/uploads/image12.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image131.jpg" ><img src="images/uploads/image13.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image141.jpg" ><img src="images/uploads/image14.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image151.jpg" ><img src="images/uploads/image15.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image161.jpg" ><img src="images/uploads/image16.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image171.jpg" ><img src="images/uploads/image17.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image181.jpg" ><img src="images/uploads/image18.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image191.jpg" ><img src="images/uploads/image19.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image201.jpg" ><img src="images/uploads/image20.jpg" alt=""></a>
+                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image211.jpg" ><img src="images/uploads/image2-1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    {% endblock content %}

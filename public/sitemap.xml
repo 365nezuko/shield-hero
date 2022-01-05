@@ -42,6 +42,21 @@
         </url>
     
         <url>
+            <loc>http://127.0.0.1:5050/charaters/naofumi_party/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:5050/charaters/naofumi_party/filo/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:5050/charaters/naofumi_party/raphtalia/</loc>
+            
+        </url>
+    
+        <url>
             <loc>http://127.0.0.1:5050/manga/</loc>
             
         </url>
