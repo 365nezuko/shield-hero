@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://clever-pike-359486.netlify.app/"
 
 title = "The Rising of the Shield Hero"
 
